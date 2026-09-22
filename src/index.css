@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative; /* Essential to anchor the background layer */
+  color: #F0EDE8;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* This creates a dedicated layer strictly for editing your background image */
+body::before {
+  content: "";
+  position: fixed; /* Keeps the background fixed while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Pushes the image layer safely behind your text and content */
+  
+  /* Your background image configuration */
+  background-image: url('/images/bg_me.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Your requested effects applied ONLY to the image file */
+  filter: grayscale(100%) contrast(1.15) brightness(0.15);
+}
+
+
+/* ─── Scrollbar ─────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0A0A0A; }
+::-webkit-scrollbar-thumb { background: #1E1E1E; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #C9A84C; }
+
+/* ─── Selection ─────────────────────────────────────── */
+::selection { background: #C9A84C22; color: #C9A84C; }
+
+/* ─── Typography ────────────────────────────────────── */
+.font-display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.05em; }
+.font-mono-label { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; }
+
+/* ─── Accent line ───────────────────────────────────── */
+.accent-line {
+  width: 40px;
+  height: 1px;
+  background: #C9A84C;
+}
+
+/* ─── Gold text ─────────────────────────────────────── */
+.text-gold { color: #C9A84C; }
+
+/* ─── Thin border ───────────────────────────────────── */
+.border-subtle { border: 1px solid #1E1E1E; }
+
+/* ─── Glass surface ─────────────────────────────────── */
+.glass {
+  background: rgba(15, 15, 15, 0.65);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  
+  /* Sub-pixel glass edge highlight mimicking iOS premium styling */
+  border: 3px solid rgba(255, 255, 255, 0.09);
+  
+  /* Inner specular reflection at the very top edge */
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+
+/* ─── Hero portrait ─────────────────────────────────── */
+.hero-portrait {
+  filter: grayscale(100%) contrast(1.15) brightness(0.85);
+  object-fit: cover;
+  object-position: center top;
+}
+
+.no-filter .hero-portrait { filter: none; }
+
+/* ─── Noise texture overlay ─────────────────────────── */
+.noise::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.35;
+}
+
+/* ─── Section spacing ───────────────────────────────── */
+.section-pad { padding: 6rem 1.5rem; }
+@media (min-width: 768px) { .section-pad { padding: 8rem 3rem; } }
+@media (min-width: 1280px) { .section-pad { padding: 10rem 6rem; } }
+
+/* ─── Discover Mike overlay ─────────────────────────── */
+.discover-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 900;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* ─── Chat bubble ───────────────────────────────────── */
+.chat-bubble-mike {
+  background: #161616;
+  border: 1px solid #1E1E1E;
+  border-radius: 0 12px 12px 12px;
+}
+.chat-bubble-user {
+  background: rgba(201,168,76,0.1);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 12px 0 12px 12px;
+}
+
+/* ─── Typing cursor ─────────────────────────────────── */
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+.cursor-blink { animation: blink 1s step-end infinite; }
+
+/* ─── Grain animation ───────────────────────────────── */
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-2%, -3%); }
+  20% { transform: translate(3%, 2%); }
+  30% { transform: translate(-1%, 4%); }
+  40% { transform: translate(2%, -1%); }
+  50% { transform: translate(-3%, 3%); }
+  60% { transform: translate(1%, -2%); }
+  70% { transform: translate(-2%, 1%); }
+  80% { transform: translate(3%, -3%); }
+  90% { transform: translate(-1%, 2%); }
+}
+
+/* ─── Project card hover ────────────────────────────── */
+.project-card {
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201, 168, 76, 0.3);
+}
+
+/* ─── Timeline line ─────────────────────────────────── */
+.timeline-line {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, #C9A84C, transparent);
+}
+
+/* ─── Discover Mike — mobile bottom sheet ───────────────── */
+.discover-overlay-mobile {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 900;
+  max-height: 92vh;
+  overflow-y: auto;
+  border-radius: 16px 16px 0 0;
+}
+
+/* ─── Gallery masonry ────────────────────────────────────── */
+.gallery-grid {
+  columns: 2;
+  column-gap: 12px;
+}
+@media (min-width: 768px) { .gallery-grid { columns: 3; } }
+@media (min-width: 1024px) { .gallery-grid { columns: 4; } }
+

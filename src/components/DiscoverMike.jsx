@@ -40,7 +40,7 @@ async function callMike(messages, systemPrompt) {
   }
 
   const data = await res.json()
-  return data.content || "Lost my train of thought. Try again?"
+  return data.content?.replace(/\*+/g, '') || "Lost my train of thought. Try again?"
 }
 
 // ── Typing dots ───────────────────────────────────────────────

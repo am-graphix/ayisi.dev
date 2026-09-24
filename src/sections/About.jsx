@@ -36,25 +36,29 @@ export default function About() {
             </p>
             <div className="accent-line mb-6" />
             <p className="text-text-muted font-body leading-relaxed mb-4">
-              I'm Michael Ayisi — a builder from Kade, Ghana. I just finished at PRESEC Legon and I'm
+              I'm Michael Ayisi — a builder from Kade, Ghana. I just finished high school at PRESEC Legon and I'm
               heading into BSc Robotics Engineering & Artificial Intelligence at the University of
               Mines & Technology (UMaT). But the education started long before university.
             </p>
             <p className="text-text-muted font-body leading-relaxed mb-4">
-              In Form 1, I joined the Robotics & Programming Club and never looked back. I've since
-              built GPS trackers, e-voting systems, environmental rovers, and a trotro platform
-              that won a global competition. I've led teams, run a club, and shown up to competitions
-              across Ghana with something worth looking at.
+              I'm drawn into the space where hardware, software and ideas meet. I enjoy taking a problem,
+              pulling it apart, and trying to turn the pieces into something that actually works, no matter what it takes.
+            </p>
+              <p className="text-text-muted font-body leading-relaxed mb-4">
+              I have real passion for problem solving.. And that has led me into robotics... 
+              I have worked on a number of projects, participated in competitions, attended conferences, and through all,
+              have learnt a lot.. Hoping they all add up one day to benefit the Ghanaian society.
+              
             </p>
             <p className="text-text-muted font-body leading-relaxed mb-4">
-              But I'm not just the tech guy. I'm a keyboardist, a vocalist, a football player,
-              a gamer, a graphic designer, and someone who genuinely enjoys learning new things —
-              whether that's a new framework, a music theory concept, or how to make a video edit
-              actually hit right.
+              But there is more to me than just building... I love music, football,
+              gaming, cycling, and anything that has to do with learning something new... 
+              I really love working with people... I find it very rewarding.
+              
             </p>
             <p className="text-text-muted font-body leading-relaxed">
-              I care about whether what I build does something useful in the world — especially
-              in Ghana, where the problems are real and the solutions are rare.
+              More interestingly, I am still figuring things out, still learning, still building...
+              Very open to collaborating, or just simply reaching out...
             </p>
           </motion.div>
 
@@ -80,11 +84,10 @@ export default function About() {
               custom={6}
               className="glass border border-border p-5 rounded-sm"
             >
-              <p className="font-mono-label text-gold mb-2">NOT JUST TECH</p>
+              <p className="font-mono-label text-gold mb-2">Tools & Materials</p>
               <p className="text-text-muted font-body text-sm leading-relaxed">
-                Keyboardist and vocalist in The Mighty Choir at church and on the P&W team at school.
-                Into graphic design, video editing, football, basketball, and gaming. Music isn't
-                a hobby — it's how I stay grounded when the code refuses to compile.
+                Adobe Photoshop, FLStudio, Audacity, Capcut, Figma, Canva, Adobe Premier Pro, MIT App Inventor, VSCode,
+                etc.
               </p>
             </motion.div>
 

@@ -141,7 +141,7 @@ export const experience = [
     role: 'Datamaker Certified Data Labelling Specialist',
     org: 'Datamaker',
     period: '2025',
-    description: '',
+    description: 'Trained on data labelling for training AI',
   },
 ]
 

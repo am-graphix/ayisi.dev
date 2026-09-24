@@ -23,7 +23,7 @@ export const projects = [
       'A Ghanaian trotro transportation platform that connects passengers with drivers in real time. Drivers register their vehicles, available seats, and destinations. Passengers find the right trotro — no guessing, no waiting in the wrong spot.',
     tags: ['Flask', 'Python', 'SQLite', 'Leaflet', 'TailwindCSS', 'JavaScript'],
     badge: '🏆 Global Young Innovators STEAM Fest — Winner',
-    year: '2025',
+    year: '2026',
     status: 'Competition Winner',
     teamSize: 9,
     details: {
@@ -44,7 +44,7 @@ export const projects = [
       'Virtual Wireless Advanced Voting Environment — a touchscreen electronic voting system with RFID voter verification, built to eliminate the mess of paper ballots in institutional settings.',
     tags: ['KivyMD', 'Python', 'SQLite', 'RFID', 'Touchscreen UI'],
     badge: 'Coolest Projects Ghana — Finalist',
-    year: '2024',
+    year: '2025',
     status: 'Exhibited',
     teamSize: 2,
     details: {
@@ -83,7 +83,7 @@ export const projects = [
     title: 'Health Port',
     tagline: 'A clinic in a kiosk.',
     description:
-      'A healthcare kiosk concept featuring vital sign sensors, an AI diagnostic model, touchscreen interaction, voice guidance, and a smart dispensing section — designed for underserved communities.',
+      'A healthcare kiosk featuring vital sign sensors, an AI diagnostic model, touchscreen interaction, voice guidance, and a smart dispensing section — designed for underserved communities.',
     tags: ['AI', 'IoT', 'Touchscreen', 'Voice', 'Healthcare'],
     badge: 'High Schools Renewable Energy Challenge - Winner',
     year: '2025',
@@ -93,9 +93,9 @@ export const projects = [
       problem:
         'Access to basic healthcare in many Ghanaian communities is limited by distance, cost, and doctor availability. People skip checkups because it\'s too much effort.',
       approach:
-        'Conceptualizing a standalone kiosk that can take vitals, give AI-assisted initial assessments, and dispense basic medication — bringing healthcare closer to the people who need it.',
+        'Designing and building a standalone kiosk that can take vitals, give AI-assisted initial assessments, and dispense basic medication — bringing healthcare closer to the people who need it.',
       outcome:
-        'Currently in early development. The concept is designed to be deployable in clinics, schools, and community centers.',
+        'Successfully built and tested at the PRESEC School Clinic (The Jubilee House)',
     },
   },
 ]
@@ -136,6 +136,12 @@ export const experience = [
     period: '2022 – 2026',
     description:
       'Active keyboardist and choir member at church and in school.',
+  },
+  {
+    role: 'Datamaker Certified Data Labelling Specialist',
+    org: 'Datamaker',
+    period: '2025',
+    description: '',
   },
 ]
 

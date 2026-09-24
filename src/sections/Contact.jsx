@@ -109,7 +109,7 @@ export default function Contact() {
           className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-8 border-t border-border"
         >
           <span className="font-mono-label text-text-muted text-[0.65rem]">
-            © 2025 AM INDUSTRIES · MICHAEL AYISI · BUILT IN GHANA
+            © 2025 AM INDUSTRIES · MICHAEL AYISI 
           </span>
           <span className="font-mono-label text-text-muted text-[0.65rem]">
             KWABENA FROM KADE

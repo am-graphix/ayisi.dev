@@ -31,7 +31,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Left — bio */}
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1}>
-            <p className="font-display text-3xl md:text-4xl text-text-primary leading-tight mb-8">
+            <p className="font-display text-3xl md:text-4xl text-text-primary text-text-muted leading-tight mb-8">
               A Closer Look at Me...
             </p>
             <div className="accent-line mb-6" />

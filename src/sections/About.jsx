@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 
 const stats = [
-  { value: '05+', label: 'Years in Robotics' },
-  { value: '07+', label: 'Competitions' },
-  { value: '04+', label: 'Hardware Projects' },
+  { value: '03+', label: 'Years in Robotics' },
+  { value: '08+', label: 'Competitions' },
+  { value: '04+', label: 'Projects' },
   { value: '03', label: 'Leadership Roles' },
 ]
 

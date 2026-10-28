@@ -36,22 +36,18 @@ export default function About() {
             </p>
             <div className="accent-line mb-6" />
             <p className="text-white text-3xl font-body leading-relaxed mb-4">
-              I'm Michael Ayisi — a passionate solutionist from Ghana. I completed high school at PRESEC Legon and I've
-              headed to BSc Robotics Engineering & Artificial Intelligence at the University of
-              Mines & Technology (UMaT).
+              I'm Michael Ayisi, a passionate solutionist from Ghana. A PRESEC Legon alumnus, I'm pursuing a 
+              BSc in Robotics Engineering & Artificial Intelligence at the University of Mines & Technology (UMaT). 
+              I'm fascinated by the intersection of hardware, software, and ideas, and I enjoy breaking down problems and 
+              turning them into practical solutions.
             </p>
             <p className="text-white text-3xl font-body leading-relaxed mb-4">
-              I'm technically drawn into the space where hardware, software and ideas meet. I enjoy taking a problem,
-              pulling it apart, and trying to turn the pieces into solution blueprints.
+              Beyond tech, I love music and soccer. Recently, I've ventured into content creation through 
+              TinyProjects with Mike, a post series where I share small projects I build and the process behind them. 
+              Check it out on my <a href="https://www.instagram.com/am.tinyprojects/" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Instagram</a>
             </p>
             <p className="text-white text-3xl font-body leading-relaxed mb-4">
-              But there is more to me than just building... I love music, football,
-              gaming, cycling, and just recently, content creation. I just started a 
-              post series I call TinyProjects with Mike.. where I post small projects I build, and the process behind them. You can check it out on my <a href="https://www.instagram.com/am.tinyprojects/" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Instagram</a> page.
-            </p>
-            <p className="text-white text-xl font-body leading-relaxed">
-              More interestingly, I am still figuring things out, still learning, still building...
-              Very open to collaborating, or just simply reaching out...
+              I'm still learning, building, and figuring things out along the way. Always open to collaborations, new ideas, or simply connecting!
             </p>
           </motion.div>
 

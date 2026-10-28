@@ -35,28 +35,21 @@ export default function About() {
               A Closer Look at Me...
             </p>
             <div className="accent-line mb-6" />
-            <p className="text-white font-body leading-relaxed mb-4">
-              I'm Michael Ayisi — a builder from Kade, Ghana. I just finished high school at PRESEC Legon and I'm
-              heading into BSc Robotics Engineering & Artificial Intelligence at the University of
-              Mines & Technology (UMaT). But the education started long before university.
+            <p className="text-white text-xl font-body leading-relaxed mb-4">
+              I'm Michael Ayisi — a passionate solutionist from Ghana. I completed high school at PRESEC Legon and I've
+              headed to BSc Robotics Engineering & Artificial Intelligence at the University of
+              Mines & Technology (UMaT).
             </p>
-            <p className="text-white font-body leading-relaxed mb-4">
-              I'm drawn into the space where hardware, software and ideas meet. I enjoy taking a problem,
-              pulling it apart, and trying to turn the pieces into something that actually works, no matter what it takes.
+            <p className="text-white text-xl font-body leading-relaxed mb-4">
+              I'm technically drawn into the space where hardware, software and ideas meet. I enjoy taking a problem,
+              pulling it apart, and trying to turn the pieces into solution blueprints.
             </p>
-              <p className="text-white font-body leading-relaxed mb-4">
-              I have real passion for problem solving.. And that has led me into robotics... 
-              I have worked on a number of projects, participated in competitions, attended conferences, and through all,
-              have learnt a lot.. Hoping they all add up one day to benefit the Ghanaian society.
-              
-            </p>
-            <p className="text-white font-body leading-relaxed mb-4">
+            <p className="text-white text-xl font-body leading-relaxed mb-4">
               But there is more to me than just building... I love music, football,
-              gaming, cycling, and anything that has to do with learning something new... 
-              I really love working with people... I find it very rewarding.
-              
+              gaming, cycling, and just recently, content creation. I just started a 
+              post series I call TinyProjects with Mike.. where I post small projects I build, and the process behind them. You can check it out on my <a href="https://www.instagram.com/am.tinyprojects/" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Instagram</a> page.
             </p>
-            <p className="text-white font-body leading-relaxed">
+            <p className="text-white text-xl font-body leading-relaxed">
               More interestingly, I am still figuring things out, still learning, still building...
               Very open to collaborating, or just simply reaching out...
             </p>

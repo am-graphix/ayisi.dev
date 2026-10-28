@@ -62,7 +62,7 @@ export default function About() {
                   className="border border-border p-5 rounded-sm"
                 >
                   <p className="font-display text-4xl text-gold mb-1">{stat.value}</p>
-                  <p className="font-mono-label text-text-muted">{stat.label}</p>
+                  <p className="font-mono-label text-3xl text-text-muted">{stat.label}</p>
                 </motion.div>
               ))}
             </div>
@@ -74,23 +74,22 @@ export default function About() {
               className="glass border border-border p-5 rounded-sm"
             >
               <p className="font-mono-label text-gold mb-2">Tools & Materials</p>
-              <p className="text-text-muted font-body text-sm leading-relaxed">
+              <p className="text-text-muted font-body text-xl text-sm leading-relaxed">
                 Adobe Photoshop, FLStudio, Audacity, Capcut, Figma, Canva, Adobe Premier Pro, MIT App Inventor, VSCode,
                 etc.
               </p>
             </motion.div>
 
-            {/* University tag */}
             <motion.div
               variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
               custom={7}
               className="flex items-center gap-3 border border-border p-4 rounded-sm"
             >
-              <div className="w-2 h-2 rounded-full bg-gold flex-shrink-0" />
+              {/* <div className="w-2 h-2 rounded-full bg-gold flex-shrink-0" />
               <div>
                 <p className="font-mono-label text-text-muted text-[0.6rem] mb-0.5">NEXT CHAPTER</p>
                 <p className="text-text-primary font-body text-sm">BSc Robotics Engineering & AI · UMaT</p>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
